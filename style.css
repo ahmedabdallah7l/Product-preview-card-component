@@ -1,0 +1,147 @@
+*
+{
+ margin:0;
+ box-sizing: border-box;
+}
+.page-container
+{
+ background-color: hsl(30, 38%, 92%);
+ height: 100vh;
+ /* margin: 0; */
+ padding: 0;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* background-color: ; */
+ font-family: 'Montserrat', sans-serif;
+ flex-direction: column-reverse;
+}
+.card{
+ margin:auto;
+ display: flex;
+ max-width: 600px;
+ height: 450px;
+ border-radius: 10px;
+ flex-direction: row;
+ align-content: flex-end;
+ flex-wrap: nowrap;
+}
+.item-image
+{
+ /* background-image: url(./images/image-product-desktop.jpg);
+ height: 400px;
+ background-position: center;
+ background-size: cover;
+ background-color: aqua; */
+ width: 50%;
+ height: 450px;
+ border-radius: 10px 0 0 10px;
+ background-image: url(./images/image-product-desktop.jpg);
+ background-position: center;
+ background-size: cover;
+ filter: brightness(90%);
+ 
+}
+.one {
+ width: 50%;
+ /* float: left; */
+}
+.item-info
+{
+ background-color: white;
+ /* background-color: var(--White); */
+ padding: 0 31.5px 31.5px;
+ width: 50%;
+ border-radius: 0 10px 10px 0;
+}
+.perfume
+{
+ font-weight: 500;
+    font-size: 12px;
+    margin-top: 31px;
+    color: var(--Darkgrayishblue);
+    letter-spacing: 5px;
+}
+.title
+{
+ margin-top: 20px;
+ font-family: 'Fraunces';
+ font-size: 32px;
+ color: var(--Gunmetal);
+}
+.perfume-info
+{
+ margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--AurometalSaurus);
+}
+.pricing
+{
+ margin-top: 10px;
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--Darkcyan);
+    flex-direction: row;
+}
+.span
+{
+ font-size: 13px;
+    font-family: 'Montserrat';
+    text-decoration: line-through;
+    color: var(--AurometalSaurus);
+    margin-left: 19px;
+}
+button
+{
+ margin-top: 19px;
+    width: 100%;
+    height: 48px;
+    background-color: rgb(30, 80, 30);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+.clear-fix
+{
+ clear: both;
+}
+@media screen  and (max-width:350px){
+
+
+}
+
+@media screen  and (max-width:600px){
+ .card
+ {
+  flex-direction: column;
+    max-width: 340px;
+    height: 100%;
+ }
+ .item-image
+{
+  width: 100%;
+  height: 240px;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+  margin-top: 30px;
+}
+.item-info
+{
+ width: 100%;
+ border-radius: 0 0 10px 10px;
+}
+ 
+}
